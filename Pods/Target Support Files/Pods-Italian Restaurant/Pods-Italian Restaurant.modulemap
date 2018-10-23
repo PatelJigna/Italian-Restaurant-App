@@ -1,0 +1,6 @@
+framework module Pods_Italian_Restaurant {
+  umbrella header "Pods-Italian Restaurant-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColCellMenu" id="gTV-IL-0wX" customClass="ColCellMenu" customModule="Italian_Restaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="36" height="34"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="36" height="34"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTV-pi-Ie7">
+                        <rect key="frame" x="0.0" y="0.0" width="36" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bg-KE-rKx">
+                                <rect key="frame" x="3.5" y="0.0" width="29.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDI-PI-10A">
+                                <rect key="frame" x="8" y="28" width="20" height="2"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.13333333333333333" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="1Xs-gE-nnm"/>
+                                    <constraint firstAttribute="height" constant="2" id="xwm-6e-2ZN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1bg-KE-rKx" firstAttribute="top" secondItem="CTV-pi-Ie7" secondAttribute="top" id="LL4-Lu-MCb"/>
+                            <constraint firstItem="1bg-KE-rKx" firstAttribute="centerX" secondItem="CTV-pi-Ie7" secondAttribute="centerX" id="fB4-6i-CgF"/>
+                            <constraint firstItem="KDI-PI-10A" firstAttribute="centerX" secondItem="CTV-pi-Ie7" secondAttribute="centerX" id="nOc-UN-W3U"/>
+                            <constraint firstAttribute="bottom" secondItem="KDI-PI-10A" secondAttribute="bottom" constant="4" id="rem-39-12H"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CTV-pi-Ie7" secondAttribute="bottom" id="3D9-Fx-fK7"/>
+                <constraint firstItem="CTV-pi-Ie7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Duk-HE-JrD"/>
+                <constraint firstItem="CTV-pi-Ie7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SGf-WE-Y5a"/>
+                <constraint firstAttribute="trailing" secondItem="CTV-pi-Ie7" secondAttribute="trailing" id="kQI-d9-HAW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="36" height="34"/>
+            <connections>
+                <outlet property="lblMenuTitle" destination="1bg-KE-rKx" id="UbF-TJ-yMK"/>
+                <outlet property="viewHorizontal" destination="KDI-PI-10A" id="U5u-tp-Cx6"/>
+            </connections>
+            <point key="canvasLocation" x="142.40000000000001" y="147.52623688155924"/>
+        </collectionViewCell>
+    </objects>
+</document>
