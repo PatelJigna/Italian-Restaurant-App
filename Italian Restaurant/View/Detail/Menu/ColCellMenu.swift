@@ -11,9 +11,8 @@ import UIKit
 class ColCellMenu: UICollectionViewCell {
 
     @IBOutlet weak var lblMenuTitle: UILabel!
-    @IBOutlet weak var viewHorizontal: UIView!
     
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,10 +22,11 @@ class ColCellMenu: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet{
-           // lblMenuTitle.textColor = isSelected ? UIColor(red: 30, green: 34, blue: 47, alpha: 1) : UIColor(red: 204, green: 204, blue: 204, alpha: 1)
+
              lblMenuTitle.textColor = isSelected ? UIColor.black : UIColor.gray
             
         }
     }
+
 
 }

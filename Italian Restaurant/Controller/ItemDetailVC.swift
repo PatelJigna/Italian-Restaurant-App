@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
-  
+protocol scrollDelegate : class {
+    func scrollToIndex(index: Int)
+}
+
+class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout, scrollDelegate {
+    
     @IBOutlet weak var mainScrollView: UIScrollView!
     
     @IBOutlet weak var mainView: UIView!
@@ -18,14 +22,31 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     
     @IBOutlet weak var colViewItemDetail: UICollectionView!
     
+    @IBOutlet weak var viewMenu: viewItemDescription!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        navigationItem.largeTitleDisplayMode = .never
         
+        viewHeader.backgroundColor = UIColor.navigationBgColor
+        mainScrollView.backgroundColor = UIColor.navigationBgColor
         colViewItemDetail.isPagingEnabled = true
     
         colViewItemDetail.register(UINib(nibName: "ColCellBook", bundle: nil), forCellWithReuseIdentifier: "ColCellBook")
+        
+        let gesture = UISwipeGestureRecognizer(target: self, action: #selector(dismiss(fromGesture:)))
+        mainScrollView.addGestureRecognizer(gesture)
+        viewMenu.delegate = self
+    
+    }
+    
+    @objc func dismiss(fromGesture gesture: UISwipeGestureRecognizer) {
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,7 +55,7 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColCellBook", for: indexPath) as! ColCellBook
-        
+
         return cell
     }
     
@@ -48,6 +69,26 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
         return 0
     }
     
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        viewMenu.horizontalViewLeftConstraint.constant = scrollView.contentOffset.x / 3
+        print("Horizontal Constant : \(viewMenu.horizontalViewLeftConstraint.constant)")
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        print("Point: \(targetContentOffset.pointee.x)")
+        
+        let index:Int = Int(targetContentOffset.pointee.x / view.frame.width)
+        let indexpath = IndexPath(item: index, section: 0)
+        viewMenu.colViewMenuBar.selectItem(at: indexpath, animated: true, scrollPosition: [])
+    }
+    
+    func scrollToIndex(index: Int) {
+        let selectedIndexpath = IndexPath(item: index, section: 0)
+        colViewItemDetail.scrollToItem(at: selectedIndexpath, at: [], animated: true)
+    }
     
     
 }

@@ -10,8 +10,6 @@ import UIKit
 
 class SubItemVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var lblSubItemTitle: UILabel!
-    
     @IBOutlet weak var colViewSubItem: UICollectionView!
     
     var strSubItemTitle: String?
@@ -69,11 +67,21 @@ class SubItemVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        lblSubItemTitle.text = strSubItemTitle
-        colViewSubItem.contentInset = UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
-
+        navigationItem.title = strSubItemTitle
+        colViewSubItem.contentInset = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 12)
+        
+        let gesture = UISwipeGestureRecognizer(target: self, action: #selector(dismiss(fromGesture:)))
+        colViewSubItem.addGestureRecognizer(gesture)
+        
     }
     
+    @objc func dismiss(fromGesture gesture: UISwipeGestureRecognizer) {
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+    
+    }
+    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return subItems.count
     }
@@ -98,12 +106,5 @@ class SubItemVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
         return 0
     }
     
-    
-    
-    @IBAction func btnBackAction(_ sender: Any) {
-        
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    
+
 }

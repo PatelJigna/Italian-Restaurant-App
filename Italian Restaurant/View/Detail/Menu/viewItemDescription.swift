@@ -14,8 +14,14 @@ class viewItemDescription: UIView, UICollectionViewDataSource,UICollectionViewDe
     
     @IBOutlet weak var colViewMenuBar: UICollectionView!
     
+    @IBOutlet weak var viewHorizontal: UIView!
+    
+    @IBOutlet weak var horizontalViewLeftConstraint: NSLayoutConstraint!
+    
     var arrMenu = ["Book","Description","Comment"]
     
+    weak var delegate: scrollDelegate?
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,7 +44,7 @@ class viewItemDescription: UIView, UICollectionViewDataSource,UICollectionViewDe
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(contentView)
         
-
+        viewHorizontal.translatesAutoresizingMaskIntoConstraints = false
         contentView.roundCorners(corners: [.topLeft, .topRight], radius: 16)
         setCollectionView()
     }
@@ -49,6 +55,8 @@ class viewItemDescription: UIView, UICollectionViewDataSource,UICollectionViewDe
         colViewMenuBar.selectItem(at: selectedIndexpath as IndexPath, animated: false, scrollPosition: .init(rawValue: 0))
     }
     
+    
+    //MARK: - UICollectionview Datasource Delegate Methods
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrMenu.count
@@ -67,6 +75,10 @@ class viewItemDescription: UIView, UICollectionViewDataSource,UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+ 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.scrollToIndex(index: indexPath.row)
     }
     
 }

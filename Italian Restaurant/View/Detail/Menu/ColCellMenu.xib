@@ -33,21 +33,11 @@
                                 <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDI-PI-10A">
-                                <rect key="frame" x="8" y="28" width="20" height="2"/>
-                                <color key="backgroundColor" red="0.11764705882352941" green="0.13333333333333333" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="1Xs-gE-nnm"/>
-                                    <constraint firstAttribute="height" constant="2" id="xwm-6e-2ZN"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1bg-KE-rKx" firstAttribute="top" secondItem="CTV-pi-Ie7" secondAttribute="top" id="LL4-Lu-MCb"/>
                             <constraint firstItem="1bg-KE-rKx" firstAttribute="centerX" secondItem="CTV-pi-Ie7" secondAttribute="centerX" id="fB4-6i-CgF"/>
-                            <constraint firstItem="KDI-PI-10A" firstAttribute="centerX" secondItem="CTV-pi-Ie7" secondAttribute="centerX" id="nOc-UN-W3U"/>
-                            <constraint firstAttribute="bottom" secondItem="KDI-PI-10A" secondAttribute="bottom" constant="4" id="rem-39-12H"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -62,7 +52,6 @@
             <size key="customSize" width="36" height="34"/>
             <connections>
                 <outlet property="lblMenuTitle" destination="1bg-KE-rKx" id="UbF-TJ-yMK"/>
-                <outlet property="viewHorizontal" destination="KDI-PI-10A" id="U5u-tp-Cx6"/>
             </connections>
             <point key="canvasLocation" x="142.40000000000001" y="147.52623688155924"/>
         </collectionViewCell>

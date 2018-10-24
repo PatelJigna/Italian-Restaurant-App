@@ -43,12 +43,32 @@ class ItemVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+
         tblViewItem.separatorStyle = .none
-        tblViewItem.contentInsetAdjustmentBehavior = .never
+        setUpNavBar()
     }
     
 
+    func setUpNavBar()  {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationItem.setHidesBackButton(true, animated: false)
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.barTintColor = UIColor.navigationBgColor
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Raleway-Black", size: 26.0)!]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Raleway-Black", size: 34.0)!]
+        navigationItem.title = "Items"
+        
+        
+        let imgBack = #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal)
+        navigationController?.navigationBar.backIndicatorImage = imgBack
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = imgBack
+        navigationItem.leftItemsSupplementBackButton = true
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
+        
+    }
+    
+   
     //MARK: - UItableview Datasource Delegate Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
