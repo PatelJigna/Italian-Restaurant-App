@@ -45,6 +45,8 @@
 		7575BC152167C11E007FAF26 /* SubItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575BC142167C11E007FAF26 /* SubItemVC.swift */; };
 		7575BC172167C1FD007FAF26 /* colCellSubItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575BC162167C1FD007FAF26 /* colCellSubItem.swift */; };
 		7575BC192167C5A9007FAF26 /* SubItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575BC182167C5A9007FAF26 /* SubItem.swift */; };
+		759508C92186EBC600A6D2C8 /* viewStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759508C82186EBC600A6D2C8 /* viewStar.swift */; };
+		759508CB2186EBD200A6D2C8 /* viewStar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759508CA2186EBD200A6D2C8 /* viewStar.xib */; };
 		75E0FA8221770BC9007A3A0F /* ColCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0FA8021770BC9007A3A0F /* ColCellSize.swift */; };
 		75E0FA8321770BC9007A3A0F /* ColCellSize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E0FA8121770BC9007A3A0F /* ColCellSize.xib */; };
 		75E0FACB217F7405007A3A0F /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0FACA217F7405007A3A0F /* Extension+UIColor.swift */; };
@@ -91,6 +93,8 @@
 		7575BC142167C11E007FAF26 /* SubItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubItemVC.swift; sourceTree = "<group>"; };
 		7575BC162167C1FD007FAF26 /* colCellSubItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colCellSubItem.swift; sourceTree = "<group>"; };
 		7575BC182167C5A9007FAF26 /* SubItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubItem.swift; sourceTree = "<group>"; };
+		759508C82186EBC600A6D2C8 /* viewStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewStar.swift; sourceTree = "<group>"; };
+		759508CA2186EBD200A6D2C8 /* viewStar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewStar.xib; sourceTree = "<group>"; };
 		75E0FA8021770BC9007A3A0F /* ColCellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellSize.swift; sourceTree = "<group>"; };
 		75E0FA8121770BC9007A3A0F /* ColCellSize.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColCellSize.xib; sourceTree = "<group>"; };
 		75E0FACA217F7405007A3A0F /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		750DAF23216739DE0005E390 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				759508C72186EB7F00A6D2C8 /* SubItem */,
 				7531E55C217085D5009A7F4F /* Detail */,
 				7575BC0D216788CB007FAF26 /* tblCellItem.swift */,
 				7575BC162167C1FD007FAF26 /* colCellSubItem.swift */,
@@ -258,6 +263,15 @@
 				75E0FACC217F75B2007A3A0F /* Extension+UIView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		759508C72186EB7F00A6D2C8 /* SubItem */ = {
+			isa = PBXGroup;
+			children = (
+				759508C82186EBC600A6D2C8 /* viewStar.swift */,
+				759508CA2186EBD200A6D2C8 /* viewStar.xib */,
+			);
+			path = SubItem;
 			sourceTree = "<group>";
 		};
 		91B3ECE205BB1747F17CD923 /* Frameworks */ = {
@@ -340,6 +354,7 @@
 				750DAF4021673E5C0005E390 /* Raleway-LightItalic.ttf in Resources */,
 				7531E58B21746FA8009A7F4F /* ColCellMenu.xib in Resources */,
 				750DAF4D21673E5C0005E390 /* Raleway-MediumItalic.ttf in Resources */,
+				759508CB2186EBD200A6D2C8 /* viewStar.xib in Resources */,
 				750DAF3E21673E5C0005E390 /* Raleway-BoldItalic.ttf in Resources */,
 				750DAF17216735910005E390 /* Assets.xcassets in Resources */,
 				750DAF4B21673E5C0005E390 /* Raleway-Bold.ttf in Resources */,
@@ -405,6 +420,7 @@
 				7575BC0E216788CB007FAF26 /* tblCellItem.swift in Sources */,
 				750DAF2721673A3D0005E390 /* Home.swift in Sources */,
 				75E0FACD217F75B2007A3A0F /* Extension+UIView.swift in Sources */,
+				759508C92186EBC600A6D2C8 /* viewStar.swift in Sources */,
 				7575BC172167C1FD007FAF26 /* colCellSubItem.swift in Sources */,
 				7531E55A217085C8009A7F4F /* viewItemDescription.swift in Sources */,
 				7575BC0C21677598007FAF26 /* ItemVC.swift in Sources */,

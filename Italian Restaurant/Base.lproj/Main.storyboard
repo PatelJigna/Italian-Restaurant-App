@@ -40,7 +40,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3b-Sr-CHi">
-                                        <rect key="frame" x="79.5" y="682" width="216" height="32"/>
+                                        <rect key="frame" x="82" y="682" width="211" height="32"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -229,9 +229,9 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hv-5J-gbV">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hv-5J-gbV" customClass="viewStar" customModule="Italian_Restaurant" customModuleProvider="target">
                                                             <rect key="frame" x="35" y="171" width="100" height="10"/>
-                                                            <color key="backgroundColor" red="1" green="0.82244809090000004" blue="0.48711290260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="2Zm-LX-ykN"/>
                                                                 <constraint firstAttribute="height" constant="10" id="wlA-ac-qPW"/>
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebZ-ol-rJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="-565.81709145427294"/>
+            <point key="canvasLocation" x="2158" y="-567"/>
         </scene>
         <!--Item DetailVC-->
         <scene sceneID="QKm-qE-Uir">
