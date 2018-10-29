@@ -32,9 +32,10 @@ class Home: UIViewController {
    
     @IBAction func btnGoToListingVC(_ sender: Any) {
         
-        let itemVC = self.storyboard?.instantiateViewController(withIdentifier: "ItemVC") as! ItemVC
-        self.navigationController?.pushViewController(itemVC, animated: true)
+        let tabBar = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
         
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        appdelegate.window?.rootViewController = tabBar
     }
     
     
