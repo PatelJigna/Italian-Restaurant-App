@@ -17,8 +17,6 @@ class colCellSubItem: UICollectionViewCell {
     
     @IBOutlet weak var lblName: UILabel!
     
-    @IBOutlet weak var lblReviews: UILabel!
-    
     @IBOutlet weak var lblSizeLPrice: UILabel!
     
     @IBOutlet weak var lblSizeMPrice: UILabel!
@@ -31,7 +29,6 @@ class colCellSubItem: UICollectionViewCell {
             }
             
             lblName.text = subItem?.name
-            lblReviews.text = subItem?.reviews
             lblSizeLPrice.text = subItem?.sizeLPrice
             lblSizeMPrice.text = subItem?.sizeMPrice
             

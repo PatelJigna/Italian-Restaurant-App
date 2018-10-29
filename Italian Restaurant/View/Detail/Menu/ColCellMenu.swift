@@ -23,7 +23,7 @@ class ColCellMenu: UICollectionViewCell {
     override var isSelected: Bool {
         didSet{
 
-             lblMenuTitle.textColor = isSelected ? UIColor.black : UIColor.gray
+             lblMenuTitle.textColor = isSelected ? UIColor.selectedTextColor : UIColor.deselectedTextcolor
             
         }
     }

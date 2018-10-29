@@ -10,14 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Raleway-Black.ttf">
-            <string>Raleway-Black</string>
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
         </array>
-        <array key="Raleway-ExtraBold.ttf">
-            <string>Raleway-ExtraBold</string>
-        </array>
-        <array key="Raleway-Medium.ttf">
-            <string>Raleway-Medium</string>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
         </array>
         <array key="Raleway-Regular.ttf">
             <string>Raleway-Regular</string>
@@ -40,7 +37,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3b-Sr-CHi">
-                                        <rect key="frame" x="82" y="682" width="211" height="32"/>
+                                        <rect key="frame" x="79.5" y="682" width="216" height="32"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -49,8 +46,8 @@
                                         <rect key="frame" x="102.5" y="737" width="170" height="35"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FC-QA-BeL">
-                                                <rect key="frame" x="0.0" y="3" width="170" height="29"/>
-                                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="2.5" width="170" height="30"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                                 <state key="normal" title="START ORDER">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -138,8 +135,8 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-Kd-emj">
-                                                    <rect key="frame" x="288" y="197" width="65" height="31"/>
-                                                    <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="26"/>
+                                                    <rect key="frame" x="276.5" y="193.5" width="76.5" height="34.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -224,9 +221,9 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="supreme special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrA-AD-7H5">
-                                                            <rect key="frame" x="28" y="147" width="114.5" height="17"/>
-                                                            <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="14"/>
-                                                            <nil key="textColor"/>
+                                                            <rect key="frame" x="25" y="147" width="120.5" height="17"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                                            <color key="textColor" red="0.043137254901960784" green="0.12549019607843137" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hv-5J-gbV" customClass="viewStar" customModule="Italian_Restaurant" customModuleProvider="target">
@@ -237,33 +234,27 @@
                                                                 <constraint firstAttribute="height" constant="10" id="wlA-ac-qPW"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(378 Reviews)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5j-b4-zNs">
-                                                            <rect key="frame" x="53" y="188" width="64" height="12"/>
-                                                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="10"/>
-                                                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvA-rm-1Zg">
-                                                            <rect key="frame" x="16" y="203" width="33" height="14"/>
-                                                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                                            <rect key="frame" x="16" y="203" width="35" height="15"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" red="0.4392156862745098" green="0.43137254901960786" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-FE-igm">
-                                                            <rect key="frame" x="16" y="223" width="36.5" height="14"/>
-                                                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                                            <rect key="frame" x="16" y="224" width="39" height="15"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" red="0.43921568630000002" green="0.43137254899999999" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$18.34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBx-1S-G5w">
-                                                            <rect key="frame" x="118" y="203" width="36" height="14"/>
-                                                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                                            <rect key="frame" x="117" y="203" width="37" height="15"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" red="0.43921568630000002" green="0.43137254899999999" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$14.60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0e-y4-Cce">
-                                                            <rect key="frame" x="117" y="223" width="37" height="14"/>
-                                                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                                            <rect key="frame" x="115.5" y="224" width="38.5" height="15"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" red="0.43921568630000002" green="0.43137254899999999" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -275,13 +266,11 @@
                                                         <constraint firstItem="Ex3-EU-D92" firstAttribute="centerX" secondItem="tj7-FW-9uo" secondAttribute="centerX" id="3oX-HA-dgI"/>
                                                         <constraint firstItem="l0e-y4-Cce" firstAttribute="top" secondItem="PcK-FE-igm" secondAttribute="top" id="66M-Zg-6em"/>
                                                         <constraint firstItem="9hv-5J-gbV" firstAttribute="top" secondItem="YrA-AD-7H5" secondAttribute="bottom" constant="7" id="8z4-ha-4DY"/>
-                                                        <constraint firstItem="KvA-rm-1Zg" firstAttribute="top" secondItem="O5j-b4-zNs" secondAttribute="bottom" constant="3" id="AGX-OM-sVY"/>
                                                         <constraint firstItem="KvA-rm-1Zg" firstAttribute="leading" secondItem="tj7-FW-9uo" secondAttribute="leading" constant="16" id="BOW-vf-IqY"/>
                                                         <constraint firstItem="kBx-1S-G5w" firstAttribute="top" secondItem="KvA-rm-1Zg" secondAttribute="top" id="DAU-dc-qRA"/>
                                                         <constraint firstAttribute="trailing" secondItem="kBx-1S-G5w" secondAttribute="trailing" constant="16" id="Dgz-jP-ipL"/>
-                                                        <constraint firstItem="O5j-b4-zNs" firstAttribute="top" secondItem="9hv-5J-gbV" secondAttribute="bottom" constant="7" id="N9K-m5-KvQ"/>
+                                                        <constraint firstItem="KvA-rm-1Zg" firstAttribute="top" secondItem="9hv-5J-gbV" secondAttribute="bottom" constant="22" id="JND-e1-9te"/>
                                                         <constraint firstItem="PcK-FE-igm" firstAttribute="top" secondItem="KvA-rm-1Zg" secondAttribute="bottom" constant="6" id="YrY-J4-Jym"/>
-                                                        <constraint firstItem="O5j-b4-zNs" firstAttribute="centerX" secondItem="tj7-FW-9uo" secondAttribute="centerX" id="hDj-kl-duk"/>
                                                         <constraint firstItem="YrA-AD-7H5" firstAttribute="centerX" secondItem="tj7-FW-9uo" secondAttribute="centerX" id="nDo-jr-WkV"/>
                                                         <constraint firstItem="YrA-AD-7H5" firstAttribute="top" secondItem="Ex3-EU-D92" secondAttribute="bottom" constant="14" id="pOX-Ii-zvP"/>
                                                         <constraint firstItem="9hv-5J-gbV" firstAttribute="centerX" secondItem="tj7-FW-9uo" secondAttribute="centerX" id="pem-gn-ofv"/>
@@ -299,7 +288,6 @@
                                         <connections>
                                             <outlet property="imgViewName" destination="Ex3-EU-D92" id="rra-6a-nKF"/>
                                             <outlet property="lblName" destination="YrA-AD-7H5" id="mMK-Gj-4LQ"/>
-                                            <outlet property="lblReviews" destination="O5j-b4-zNs" id="eEg-Fk-QAF"/>
                                             <outlet property="lblSizeLPrice" destination="kBx-1S-G5w" id="Y5t-nH-17p"/>
                                             <outlet property="lblSizeMPrice" destination="l0e-y4-Cce" id="dHB-Hz-JY1"/>
                                             <outlet property="viewBgSublisting" destination="tj7-FW-9uo" id="t4G-cJ-Lqn"/>
@@ -342,7 +330,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-oD-MUH">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1305"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1208"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAP-32-Idn">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
@@ -370,10 +358,10 @@
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-A4-TPP">
-                                                <rect key="frame" x="0.0" y="507" width="375" height="798"/>
+                                                <rect key="frame" x="0.0" y="507" width="375" height="701"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="798" id="7W0-nj-FWf"/>
+                                                    <constraint firstAttribute="height" constant="701" id="7W0-nj-FWf"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bdk-xX-y3e">
                                                     <size key="itemSize" width="50" height="50"/>

@@ -10,37 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Raleway-Black.ttf">
-            <string>Raleway-Black</string>
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
         </array>
         <array key="Raleway-Bold.ttf">
             <string>Raleway-Bold</string>
-        </array>
-        <array key="Raleway-Medium.ttf">
-            <string>Raleway-Medium</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColCellBook" id="gTV-IL-0wX" customClass="ColCellBook" customModule="Italian_Restaurant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="798"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="798"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yau-uo-L4j">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="798"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jon-k2-4KI">
-                                <rect key="frame" x="16" y="40" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <rect key="frame" x="16" y="40" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NlV-iw-sll">
-                                <rect key="frame" x="16" y="71" width="343" height="156"/>
+                                <rect key="frame" x="16" y="70" width="343" height="156"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="EW4-mD-iOS"/>
@@ -53,19 +56,19 @@
                                 </collectionViewFlowLayout>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Y1-pw-8af">
-                                <rect key="frame" x="16" y="257" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <rect key="frame" x="16" y="256" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lt-dn-IlV">
-                                <rect key="frame" x="16" y="288" width="343" height="36"/>
+                                <rect key="frame" x="16" y="286" width="343" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq8-Ba-uHG">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
                                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
                                         <state key="normal" title="3">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.043137254901960784" green="0.12549019607843137" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow red" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-5y-8eO">
@@ -88,76 +91,59 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style Of Cake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdU-jn-4k5">
-                                <rect key="frame" x="16" y="354" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <rect key="frame" x="16" y="352" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukU-g0-AmG">
-                                <rect key="frame" x="16" y="385" width="167" height="36"/>
+                                <rect key="frame" x="16" y="382" width="167" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="Mgn-te-Zzd"/>
                                     <constraint firstAttribute="height" constant="36" id="wds-WA-p1H"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                 <state key="normal" title="Thick">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpP-SP-Txa">
-                                <rect key="frame" x="192" y="385" width="167" height="36"/>
+                                <rect key="frame" x="192" y="382" width="167" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="Vuz-hq-hl1"/>
                                     <constraint firstAttribute="height" constant="36" id="Xjg-hH-dSa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                 <state key="normal" title="Thin">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-CU-K8p">
-                                <rect key="frame" x="16" y="451" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaH-pv-1He">
-                                <rect key="frame" x="16" y="482" width="343" height="36"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="dM5-6V-sY3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
-                                <state key="normal" title="Add Topping">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMA-cb-AU4">
-                                <rect key="frame" x="16" y="548" width="343" height="21"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                                <rect key="frame" x="16" y="448" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I'm want to have extra cheese..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-22-hD7">
-                                <rect key="frame" x="16" y="579" width="343" height="121"/>
+                                <rect key="frame" x="16" y="478" width="343" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="zj1-im-MzD"/>
                                 </constraints>
                                 <color key="textColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCH-Ih-rvD">
-                                <rect key="frame" x="16" y="730" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.92549019607843142" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="16" y="629" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.16078431372549018" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iXn-1D-kpY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="18"/>
-                                <state key="normal" title="ORDER NOW">
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Add to cart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -171,33 +157,27 @@
                             <constraint firstItem="NlV-iw-sll" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="3I1-tg-cVN"/>
                             <constraint firstItem="7Lt-dn-IlV" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="9DA-JY-qPv"/>
                             <constraint firstItem="NlV-iw-sll" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="9Ya-mK-1PD"/>
-                            <constraint firstItem="x8w-CU-K8p" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="A90-Tx-lyH"/>
                             <constraint firstItem="0Y1-pw-8af" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="BL4-cP-KB8"/>
-                            <constraint firstItem="eaH-pv-1He" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="DB1-lv-nxY"/>
                             <constraint firstItem="0Y1-pw-8af" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="DKB-0C-2nQ"/>
+                            <constraint firstItem="bMA-cb-AU4" firstAttribute="top" secondItem="ukU-g0-AmG" secondAttribute="bottom" constant="30" id="ERl-CD-yP8"/>
                             <constraint firstItem="fmT-22-hD7" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="HRe-uC-V9m"/>
                             <constraint firstItem="fmT-22-hD7" firstAttribute="top" secondItem="bMA-cb-AU4" secondAttribute="bottom" constant="10" id="M9d-NU-N3Z"/>
                             <constraint firstItem="jdU-jn-4k5" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="MYt-6L-tHZ"/>
-                            <constraint firstItem="x8w-CU-K8p" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="NdO-pR-tdG"/>
                             <constraint firstItem="bMA-cb-AU4" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="PeL-0o-J3g"/>
                             <constraint firstItem="XCH-Ih-rvD" firstAttribute="top" secondItem="fmT-22-hD7" secondAttribute="bottom" constant="30" id="Pz4-gZ-HbB"/>
                             <constraint firstItem="jdU-jn-4k5" firstAttribute="top" secondItem="7Lt-dn-IlV" secondAttribute="bottom" constant="30" id="Uvq-4q-WBa"/>
                             <constraint firstItem="XCH-Ih-rvD" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="VCG-mE-QXe"/>
                             <constraint firstItem="fmT-22-hD7" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="Vkg-mt-5cy"/>
-                            <constraint firstItem="x8w-CU-K8p" firstAttribute="top" secondItem="ukU-g0-AmG" secondAttribute="bottom" constant="30" id="WRd-LN-Tnb"/>
                             <constraint firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" constant="16" id="XCG-tz-OFK"/>
                             <constraint firstItem="7Lt-dn-IlV" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="Xhi-Ix-asg"/>
                             <constraint firstItem="0Y1-pw-8af" firstAttribute="top" secondItem="NlV-iw-sll" secondAttribute="bottom" constant="30" id="cjt-F4-ID1"/>
                             <constraint firstItem="kpP-SP-Txa" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="dJb-bB-Zze"/>
-                            <constraint firstItem="bMA-cb-AU4" firstAttribute="top" secondItem="eaH-pv-1He" secondAttribute="bottom" constant="30" id="dfC-Wt-7DV"/>
                             <constraint firstItem="jon-k2-4KI" firstAttribute="top" secondItem="yau-uo-L4j" secondAttribute="top" constant="40" id="gkP-xM-sJi"/>
-                            <constraint firstItem="eaH-pv-1He" firstAttribute="top" secondItem="x8w-CU-K8p" secondAttribute="bottom" constant="10" id="hgj-TA-A3W"/>
                             <constraint firstItem="jdU-jn-4k5" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="hnv-ag-n9C"/>
                             <constraint firstItem="jon-k2-4KI" firstAttribute="leading" secondItem="yau-uo-L4j" secondAttribute="leading" constant="16" id="k9v-nt-wLV"/>
                             <constraint firstItem="ukU-g0-AmG" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="pgt-AT-rWx"/>
                             <constraint firstItem="7Lt-dn-IlV" firstAttribute="top" secondItem="0Y1-pw-8af" secondAttribute="bottom" constant="10" id="q5o-HS-wKH"/>
                             <constraint firstItem="bMA-cb-AU4" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="wo1-oM-DPh"/>
-                            <constraint firstItem="eaH-pv-1He" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="y27-lB-KMh"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -211,7 +191,6 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="166" height="798"/>
             <connections>
-                <outlet property="btnAddTopping" destination="eaH-pv-1He" id="jkJ-pK-soY"/>
                 <outlet property="btnOrderNow" destination="XCH-Ih-rvD" id="Xmb-cx-cOe"/>
                 <outlet property="btnThick" destination="ukU-g0-AmG" id="bjm-Gu-MQl"/>
                 <outlet property="btnThin" destination="kpP-SP-Txa" id="Vn6-g9-tRe"/>

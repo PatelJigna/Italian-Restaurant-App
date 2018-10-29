@@ -12,7 +12,6 @@ class SubItem: NSObject {
     
     var imageName: String?
     var name: String?
-    var reviews: String?
     var sizeLPrice: String?
     var sizeMPrice: String?
     

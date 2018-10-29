@@ -61,7 +61,7 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: colViewItemDetail.frame.width, height: 798.0)
+        return CGSize(width: colViewItemDetail.frame.width, height: 701.0)
     }
     
     

@@ -18,9 +18,7 @@ class ColCellBook: UICollectionViewCell, UICollectionViewDataSource, UICollectio
     @IBOutlet weak var btnThick: UIButton!
     
     @IBOutlet weak var btnThin: UIButton!
-    
-    @IBOutlet weak var btnAddTopping: UIButton!
-    
+        
     @IBOutlet weak var txtDescription: UITextView!
     
     @IBOutlet weak var btnOrderNow: UIButton!
@@ -49,7 +47,6 @@ class ColCellBook: UICollectionViewCell, UICollectionViewDataSource, UICollectio
         setBorderCornerRadius(view: viewQuantity, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
         setBorderCornerRadius(view: btnThin, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
         setBorderCornerRadius(view: btnThick, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
-        setBorderCornerRadius(view: btnAddTopping, cornerRadius: 8.0, borderWidth: 0.0, borderColor: UIColor.clear.cgColor)
         setBorderCornerRadius(view: btnOrderNow, cornerRadius: 25.0, borderWidth: 0.0, borderColor: UIColor.clear.cgColor)
         setBorderCornerRadius(view: txtDescription, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
     }
@@ -82,7 +79,7 @@ class ColCellBook: UICollectionViewCell, UICollectionViewDataSource, UICollectio
         btnThick.setTitleColor(UIColor.gray, for: .normal)
         btnThick.setTitleColor(UIColor.white, for: .selected)
         btnThick.tintColor = UIColor.clear
-        btnThick.backgroundColor = UIColor.black
+        btnThick.backgroundColor = UIColor.selectedTextColor
         
         btnThin.setTitleColor(UIColor.gray, for: .normal)
         btnThin.setTitleColor(UIColor.white, for: .selected)
@@ -98,14 +95,14 @@ class ColCellBook: UICollectionViewCell, UICollectionViewDataSource, UICollectio
         if sender == btnThick {
             btnThick.isSelected = true
             btnThin.isSelected = false
-            btnThick.backgroundColor = UIColor.black
+            btnThick.backgroundColor = UIColor.selectedTextColor
             btnThin.backgroundColor = UIColor.white
             
         } else if sender == btnThin {
             btnThick.isSelected = false
             btnThin.isSelected = true
             btnThick.backgroundColor = UIColor.white
-            btnThin.backgroundColor = UIColor.black
+            btnThin.backgroundColor = UIColor.selectedTextColor
         }
     }
     

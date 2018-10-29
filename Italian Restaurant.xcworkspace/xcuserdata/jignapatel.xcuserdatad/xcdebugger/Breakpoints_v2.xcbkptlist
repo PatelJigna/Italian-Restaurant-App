@@ -153,13 +153,125 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Italian Restaurant/View/Detail/Book/ColCellSize.swift"
-            timestampString = "562003887.620943"
+            filePath = "Italian Restaurant/View/Detail/Menu/viewItemDescription.swift"
+            timestampString = "562524012.794672"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "awakeFromNib()"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "viewItemDescription"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Italian Restaurant/View/Detail/Menu/viewItemDescription.swift"
+            timestampString = "562524012.7947479"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewItemDescription"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Italian_Restaurant.viewItemDescription.delegate.getter : weak Swift.Optional&lt;Italian_Restaurant.scrollDelegate&gt;"
+                  moduleName = "Italian Restaurant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jignapatel/Desktop/Twinkle/Github_Projects/Italian-Restaurant-App/Italian%20Restaurant/View/Detail/Menu/viewItemDescription.swift"
+                  timestampString = "562092056.764478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "123">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Italian_Restaurant.viewItemDescription.delegate.setter : weak Swift.Optional&lt;Italian_Restaurant.scrollDelegate&gt;"
+                  moduleName = "Italian Restaurant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jignapatel/Desktop/Twinkle/Github_Projects/Italian-Restaurant-App/Italian%20Restaurant/View/Detail/Menu/viewItemDescription.swift"
+                  timestampString = "562092056.76621"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Italian Restaurant/Controller/ItemDetailVC.swift"
+            timestampString = "562524012.794811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "ItemDetailVC"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Italian Restaurant/Controller/ItemDetailVC.swift"
+            timestampString = "562524012.79491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "scrollDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Italian Restaurant/Controller/ItemDetailVC.swift"
+            timestampString = "562524012.794971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "scrollViewWillEndDragging(_:withVelocity:targetContentOffset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Italian Restaurant/Controller/ItemDetailVC.swift"
+            timestampString = "562524012.795025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "scrollToIndex(index:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

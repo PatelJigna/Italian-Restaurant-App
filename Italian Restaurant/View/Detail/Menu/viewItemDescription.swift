@@ -18,7 +18,7 @@ class viewItemDescription: UIView, UICollectionViewDataSource,UICollectionViewDe
     
     @IBOutlet weak var horizontalViewLeftConstraint: NSLayoutConstraint!
     
-    var arrMenu = ["Book","Description","Comment"]
+    var arrMenu = ["Order","Description","Reviews"]
     
     weak var delegate: scrollDelegate?
 
