@@ -11,4 +11,5 @@ import Foundation
 class Item:NSObject {
     var itemImageName: String?
     var itemName: String?
+    var noOfItems: String?
 }

@@ -17,22 +17,31 @@ class ItemVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         var item1 = Item()
         item1.itemImageName = "pizza"
         item1.itemName = "Pizza"
+        item1.noOfItems = "14 Items"
         
         var item2 = Item()
         item2.itemImageName = "pasta"
         item2.itemName = "Pasta"
+        item2.noOfItems = "19 Items"
+
         
         var item3 = Item()
         item3.itemImageName = "salads"
         item3.itemName = "Salads"
+        item3.noOfItems = "10 Items"
+
         
         var item4 = Item()
         item4.itemImageName = "dessert"
         item4.itemName = "Dessert"
+        item4.noOfItems = "19 Items"
+
         
         var item5 = Item()
-        item5.itemImageName = "beverage"
-        item5.itemName = "Beverage"
+        item5.itemImageName = "drink"
+        item5.itemName = "Drinks"
+        item5.noOfItems = "20 Items"
+
         
         return [item1, item2, item3, item4, item5]
         
@@ -50,6 +59,7 @@ class ItemVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
     
 
     func setUpNavBar()  {
+
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         navigationItem.setHidesBackButton(true, animated: false)
         self.navigationController?.navigationBar.isTranslucent = false
@@ -57,7 +67,7 @@ class ItemVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         self.navigationController?.navigationBar.barTintColor = UIColor.navigationBgColor
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 26.0)!]
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 34.0)!]
-        navigationItem.title = "Items"
+        navigationItem.title = "Menu"
         
         
         let imgBack = #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal)
@@ -78,6 +88,9 @@ class ItemVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tblCellItem") as! tblCellItem
         cell.item = items[indexPath.row]
+        cell.lblItemName.textAlignment = indexPath.row % 2 == 0 ? NSTextAlignment.left : NSTextAlignment.right
+        cell.lblNoOfItems.textAlignment = indexPath.row % 2 == 0 ? NSTextAlignment.left : NSTextAlignment.right
+        
         return cell
     }
   

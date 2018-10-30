@@ -31,8 +31,10 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
         // Do any additional setup after loading the view.
         navigationItem.largeTitleDisplayMode = .never
         
+      //  self.navigationController?.setNavigationBarHidden(true, animated: true)
+
         viewHeader.backgroundColor = UIColor.navigationBgColor
-        mainScrollView.backgroundColor = UIColor.navigationBgColor
+        mainScrollView.backgroundColor = UIColor.white
         colViewItemDetail.isPagingEnabled = true
     
         colViewItemDetail.register(UINib(nibName: "ColCellBook", bundle: nil), forCellWithReuseIdentifier: "ColCellBook")

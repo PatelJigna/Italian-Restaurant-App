@@ -13,6 +13,9 @@
         <array key="Montserrat-Bold.ttf">
             <string>Montserrat-Bold</string>
         </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
         <array key="Montserrat-Medium.ttf">
             <string>Montserrat-Medium</string>
         </array>
@@ -130,18 +133,28 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-Ux-hTc">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250.5"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-Kd-emj">
+                                                    <rect key="frame" x="16" y="74" width="343" height="34.5"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oU-zD-L7s">
+                                                    <rect key="frame" x="16" y="108.5" width="343" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-F2-9QU">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="250.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-Kd-emj">
-                                                    <rect key="frame" x="276.5" y="193.5" width="76.5" height="34.5"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="vnG-Kd-emj" secondAttribute="trailing" constant="16" id="5WJ-lZ-gA9"/>
+                                                <constraint firstItem="vnG-Kd-emj" firstAttribute="top" secondItem="njr-Nl-Add" secondAttribute="top" constant="74" id="69d-hO-qtF"/>
+                                                <constraint firstItem="1oU-zD-L7s" firstAttribute="top" secondItem="vnG-Kd-emj" secondAttribute="bottom" id="B6A-Bq-iQx"/>
+                                                <constraint firstItem="1oU-zD-L7s" firstAttribute="leading" secondItem="vnG-Kd-emj" secondAttribute="leading" id="Cb9-kG-ae2"/>
+                                                <constraint firstItem="vnG-Kd-emj" firstAttribute="leading" secondItem="njr-Nl-Add" secondAttribute="leading" constant="16" id="EJf-Je-xgd"/>
                                                 <constraint firstItem="1Gf-Ux-hTc" firstAttribute="leading" secondItem="njr-Nl-Add" secondAttribute="leading" id="FQp-3R-4K3"/>
                                                 <constraint firstAttribute="bottom" secondItem="p7R-F2-9QU" secondAttribute="bottom" id="Kz4-m9-WlG"/>
                                                 <constraint firstItem="p7R-F2-9QU" firstAttribute="leading" secondItem="njr-Nl-Add" secondAttribute="leading" id="PP9-sG-AVl"/>
@@ -150,14 +163,13 @@
                                                 <constraint firstItem="p7R-F2-9QU" firstAttribute="top" secondItem="njr-Nl-Add" secondAttribute="top" id="bbH-EU-3H0"/>
                                                 <constraint firstAttribute="trailing" secondItem="p7R-F2-9QU" secondAttribute="trailing" id="f66-Tk-qvo"/>
                                                 <constraint firstAttribute="bottom" secondItem="1Gf-Ux-hTc" secondAttribute="bottom" id="hIM-0K-pKa"/>
-                                                <constraint firstAttribute="bottom" secondItem="vnG-Kd-emj" secondAttribute="bottom" constant="22.5" id="nas-Ow-9dg"/>
-                                                <constraint firstAttribute="trailing" secondItem="vnG-Kd-emj" secondAttribute="trailing" constant="22" id="poc-eF-Jzl"/>
+                                                <constraint firstItem="1oU-zD-L7s" firstAttribute="trailing" secondItem="vnG-Kd-emj" secondAttribute="trailing" id="rGo-Ed-n5S"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgViewItem" destination="1Gf-Ux-hTc" id="7zg-cW-gwW"/>
                                             <outlet property="lblItemName" destination="vnG-Kd-emj" id="eNV-Lf-Ge7"/>
-                                            <outlet property="viewGradient" destination="p7R-F2-9QU" id="kqp-2F-ioF"/>
+                                            <outlet property="lblNoOfItems" destination="1oU-zD-L7s" id="Rn4-XD-hrV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -336,6 +348,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAP-32-Idn">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
                                                 <subviews>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailBg" translatesAutoresizingMaskIntoConstraints="NO" id="NvN-r9-fyK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                                                    </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza12" translatesAutoresizingMaskIntoConstraints="NO" id="Hoi-iu-BEk">
                                                         <rect key="frame" x="59.5" y="42.5" width="256" height="248"/>
                                                         <constraints>
@@ -344,11 +359,15 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.11764705882352941" green="0.13333333333333333" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="NvN-r9-fyK" secondAttribute="trailing" id="Bsj-wB-mKJ"/>
                                                     <constraint firstAttribute="height" constant="333" id="Ckm-GW-e8E"/>
+                                                    <constraint firstItem="NvN-r9-fyK" firstAttribute="top" secondItem="dAP-32-Idn" secondAttribute="top" id="cLF-ML-mRi"/>
                                                     <constraint firstItem="Hoi-iu-BEk" firstAttribute="centerY" secondItem="dAP-32-Idn" secondAttribute="centerY" id="j5d-47-78f"/>
                                                     <constraint firstItem="Hoi-iu-BEk" firstAttribute="centerX" secondItem="dAP-32-Idn" secondAttribute="centerX" id="oh3-ar-dHp"/>
+                                                    <constraint firstItem="NvN-r9-fyK" firstAttribute="leading" secondItem="dAP-32-Idn" secondAttribute="leading" id="twv-R5-c37"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NvN-r9-fyK" secondAttribute="bottom" id="vun-Pz-4u9"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grE-Z7-5rh" customClass="viewItemDescription" customModule="Italian_Restaurant" customModuleProvider="target">
@@ -358,7 +377,7 @@
                                                     <constraint firstAttribute="height" constant="174" id="hly-7m-aeH"/>
                                                 </constraints>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-A4-TPP">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-A4-TPP">
                                                 <rect key="frame" x="0.0" y="507" width="375" height="701"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -575,7 +594,8 @@
         <image name="arrow black" width="6" height="10"/>
         <image name="background" width="375" height="812"/>
         <image name="cutlery" width="30" height="30"/>
-        <image name="pizza" width="375" height="248"/>
+        <image name="detailBg" width="375" height="423"/>
+        <image name="pizza" width="375" height="200"/>
         <image name="pizza1" width="123" height="119"/>
         <image name="pizza12" width="256" height="248"/>
         <image name="shopping-bag" width="28" height="34"/>
