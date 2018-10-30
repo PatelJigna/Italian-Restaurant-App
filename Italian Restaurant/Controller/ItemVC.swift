@@ -48,35 +48,33 @@ class ItemVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
     }()
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIView.animate(withDuration: 0.25) {
+            self.setNeedsStatusBarAppearanceUpdate()
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 
         tblViewItem.separatorStyle = .none
-        setUpNavBar()
+        tblViewItem.contentInsetAdjustmentBehavior = .never
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+
     }
     
-
-    func setUpNavBar()  {
-
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationItem.setHidesBackButton(true, animated: false)
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.barTintColor = UIColor.navigationBgColor
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 26.0)!]
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 34.0)!]
-        navigationItem.title = "Menu"
-        
-        
-        let imgBack = #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal)
-        navigationController?.navigationBar.backIndicatorImage = imgBack
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = imgBack
-        navigationItem.leftItemsSupplementBackButton = true
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
-        
-    }
+   
     
    
     //MARK: - UItableview Datasource Delegate Methods

@@ -25,14 +25,23 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     @IBOutlet weak var viewMenu: viewItemDescription!
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.25) {
+            self.setNeedsStatusBarAppearanceUpdate()
+            self.removeNavBarShadow()
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         navigationItem.largeTitleDisplayMode = .never
         
-      //  self.navigationController?.setNavigationBarHidden(true, animated: true)
-
         viewHeader.backgroundColor = UIColor.navigationBgColor
         mainScrollView.backgroundColor = UIColor.white
         colViewItemDetail.isPagingEnabled = true
@@ -45,11 +54,20 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     
     }
     
+    
+    func removeNavBarShadow() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+    }
+    
     @objc func dismiss(fromGesture gesture: UISwipeGestureRecognizer) {
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         
     }
+    
+   
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3

@@ -57,22 +57,60 @@ class SubItemVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
     }()
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.25) {
+            self.setNeedsStatusBarAppearanceUpdate()
+            self.restoreNavBarShadow()
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.title = strSubItemTitle
         colViewSubItem.contentInset = UIEdgeInsets(top: 10, left: 12, bottom: 10, right: 12)
         
         let gesture = UISwipeGestureRecognizer(target: self, action: #selector(dismiss(fromGesture:)))
         colViewSubItem.addGestureRecognizer(gesture)
         
+        setUpNavBar()
     }
+    
+    func setUpNavBar()  {
+        navigationItem.title = strSubItemTitle
+
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationItem.setHidesBackButton(false, animated: false)
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 26.0)!]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont(name: "Montserrat-Bold", size: 34.0)!]
+        
+        
+        let imgBack = #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal)
+        navigationController?.navigationBar.backIndicatorImage = imgBack
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = imgBack
+        navigationItem.leftItemsSupplementBackButton = true
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
+        
+    
+    }
+    
+    func restoreNavBarShadow() {
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for:.default)
+        self.navigationController?.navigationBar.shadowImage = nil
+    }
+   
     
     @objc func dismiss(fromGesture gesture: UISwipeGestureRecognizer) {
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-    
+
     }
     
 

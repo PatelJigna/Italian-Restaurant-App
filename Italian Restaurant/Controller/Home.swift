@@ -15,6 +15,16 @@ class Home: UIViewController {
     
     @IBOutlet weak var imgViewBackground: UIImageView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.25) {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +39,6 @@ class Home: UIViewController {
         
     }
     
-   
     @IBAction func btnGoToListingVC(_ sender: Any) {
         
         let tabBar = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
