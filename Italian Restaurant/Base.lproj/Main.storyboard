@@ -455,7 +455,7 @@
         <scene sceneID="liY-G4-kje">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Z65-2L-dhp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="cutlery" id="uFQ-GM-zwe">
+                    <tabBarItem key="tabBarItem" title="" image="cutlery_deselected" selectedImage="cutlery_selected" id="uFQ-GM-zwe">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -478,6 +478,7 @@
                 <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="iqu-dL-Kiw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="B70-bl-zvf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -498,7 +499,7 @@
         <scene sceneID="t9A-AN-5jn">
             <objects>
                 <navigationController id="cLi-ok-P8X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="user" id="46c-3L-ijl">
+                    <tabBarItem key="tabBarItem" title="" image="user_deselected" selectedImage="user_selected" id="46c-3L-ijl">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -518,7 +519,7 @@
         <scene sceneID="oTi-Og-ZUg">
             <objects>
                 <navigationController id="SsG-HR-gAA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="shopping-bag" id="vvX-MY-mCw">
+                    <tabBarItem key="tabBarItem" title="" image="shoppingbag_deselected" selectedImage="shoppingbag_selected" id="vvX-MY-mCw">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yIA-ML-NFL">
@@ -593,12 +594,15 @@
     <resources>
         <image name="arrow black" width="6" height="10"/>
         <image name="background" width="375" height="812"/>
-        <image name="cutlery" width="30" height="30"/>
+        <image name="cutlery_deselected" width="30" height="30"/>
+        <image name="cutlery_selected" width="30" height="30"/>
         <image name="detailBg" width="375" height="423"/>
         <image name="pizza" width="375" height="200"/>
         <image name="pizza1" width="123" height="119"/>
         <image name="pizza12" width="256" height="248"/>
-        <image name="shopping-bag" width="28" height="34"/>
-        <image name="user" width="24" height="29"/>
+        <image name="shoppingbag_deselected" width="28" height="34"/>
+        <image name="shoppingbag_selected" width="28" height="34"/>
+        <image name="user_deselected" width="24" height="29"/>
+        <image name="user_selected" width="24" height="29"/>
     </resources>
 </document>
