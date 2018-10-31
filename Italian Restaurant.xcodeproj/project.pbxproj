@@ -12,6 +12,10 @@
 		750DAF17216735910005E390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750DAF16216735910005E390 /* Assets.xcassets */; };
 		750DAF1A216735910005E390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750DAF18216735910005E390 /* LaunchScreen.storyboard */; };
 		750DAF2721673A3D0005E390 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750DAF2621673A3D0005E390 /* Home.swift */; };
+		751CD6332189C4B200433611 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD62F2189C4B100433611 /* 1.png */; };
+		751CD6342189C4B200433611 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD6302189C4B100433611 /* 4.png */; };
+		751CD6352189C4B200433611 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD6312189C4B100433611 /* 3.png */; };
+		751CD6362189C4B200433611 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD6322189C4B200433611 /* 2.png */; };
 		7531E55721707EC2009A7F4F /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531E55621707EC2009A7F4F /* ItemDetailVC.swift */; };
 		7531E55A217085C8009A7F4F /* viewItemDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531E558217085C8009A7F4F /* viewItemDescription.swift */; };
 		7531E58A21746FA8009A7F4F /* ColCellMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531E58821746FA8009A7F4F /* ColCellMenu.swift */; };
@@ -79,6 +83,10 @@
 		750DAF19216735910005E390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750DAF1B216735910005E390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750DAF2621673A3D0005E390 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		751CD62F2189C4B100433611 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		751CD6302189C4B100433611 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		751CD6312189C4B100433611 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		751CD6322189C4B200433611 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		7531E55621707EC2009A7F4F /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 		7531E558217085C8009A7F4F /* viewItemDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewItemDescription.swift; sourceTree = "<group>"; };
 		7531E58821746FA8009A7F4F /* ColCellMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellMenu.swift; sourceTree = "<group>"; };
@@ -182,6 +190,7 @@
 		750DAF0E2167358C0005E390 /* Italian Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				751CD62E2189C48600433611 /* Images */,
 				7575BC1121678EA0007FAF26 /* Helpers */,
 				750DAF2821673D680005E390 /* Resources */,
 				750DAF22216739D40005E390 /* Model */,
@@ -249,6 +258,17 @@
 			children = (
 			);
 			path = Description;
+			sourceTree = "<group>";
+		};
+		751CD62E2189C48600433611 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				751CD62F2189C4B100433611 /* 1.png */,
+				751CD6322189C4B200433611 /* 2.png */,
+				751CD6312189C4B100433611 /* 3.png */,
+				751CD6302189C4B100433611 /* 4.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		7531E55C217085D5009A7F4F /* Detail */ = {
@@ -429,6 +449,7 @@
 				759509152187676000A6D2C8 /* Raleway-BlackItalic.ttf in Resources */,
 				7595090E2187676000A6D2C8 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 				750DAF1A216735910005E390 /* LaunchScreen.storyboard in Resources */,
+				751CD6332189C4B200433611 /* 1.png in Resources */,
 				759508E62187673800A6D2C8 /* Montserrat-Thin.ttf in Resources */,
 				759509192187676000A6D2C8 /* Raleway-Bold.ttf in Resources */,
 				759508E92187673800A6D2C8 /* Montserrat-BlackItalic.ttf in Resources */,
@@ -437,6 +458,7 @@
 				759508E22187673800A6D2C8 /* Montserrat-BoldItalic.ttf in Resources */,
 				759508EE2187673800A6D2C8 /* Montserrat-Black.ttf in Resources */,
 				759508EB2187673800A6D2C8 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				751CD6342189C4B200433611 /* 4.png in Resources */,
 				759509132187676000A6D2C8 /* Raleway-Black.ttf in Resources */,
 				759508EA2187673800A6D2C8 /* Montserrat-SemiBold.ttf in Resources */,
 				759508E12187673800A6D2C8 /* Montserrat-Medium.ttf in Resources */,
@@ -449,6 +471,7 @@
 				759509172187676000A6D2C8 /* Raleway-Thin.ttf in Resources */,
 				759509162187676000A6D2C8 /* Raleway-LightItalic.ttf in Resources */,
 				7595090F2187676000A6D2C8 /* Raleway-Regular.ttf in Resources */,
+				751CD6352189C4B200433611 /* 3.png in Resources */,
 				759508E42187673800A6D2C8 /* Montserrat-ThinItalic.ttf in Resources */,
 				759509092187676000A6D2C8 /* Raleway-ThinItalic.ttf in Resources */,
 				759509102187676000A6D2C8 /* Raleway-ExtraLightItalic.ttf in Resources */,
@@ -459,6 +482,7 @@
 				759508F12187673800A6D2C8 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				7595090D2187676000A6D2C8 /* Raleway-ExtraBold.ttf in Resources */,
 				759508E82187673800A6D2C8 /* Montserrat-MediumItalic.ttf in Resources */,
+				751CD6362189C4B200433611 /* 2.png in Resources */,
 				759508EC2187673800A6D2C8 /* Montserrat-ExtraBold.ttf in Resources */,
 				75E0FA8321770BC9007A3A0F /* ColCellSize.xib in Resources */,
 				759509122187676000A6D2C8 /* Raleway-Light.ttf in Resources */,
