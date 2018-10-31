@@ -45,7 +45,7 @@ class viewItemDescription: UIView, UICollectionViewDataSource,UICollectionViewDe
         addSubview(contentView)
         
         viewHorizontal.translatesAutoresizingMaskIntoConstraints = false
-        contentView.roundCorners(corners: [.topLeft, .topRight], radius: 16)
+       // contentView.roundCorners(corners: [.topLeft, .topRight], radius: 16)
         setCollectionView()
     }
     

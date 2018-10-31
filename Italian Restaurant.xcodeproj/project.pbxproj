@@ -17,8 +17,8 @@
 		7531E58A21746FA8009A7F4F /* ColCellMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531E58821746FA8009A7F4F /* ColCellMenu.swift */; };
 		7531E58B21746FA8009A7F4F /* ColCellMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7531E58921746FA8009A7F4F /* ColCellMenu.xib */; };
 		7531E5952174BA48009A7F4F /* viewItemDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7531E5942174BA48009A7F4F /* viewItemDescription.xib */; };
-		7531E59D2174EA52009A7F4F /* ColCellBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531E59B2174EA52009A7F4F /* ColCellBook.swift */; };
-		7531E59E2174EA52009A7F4F /* ColCellBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7531E59C2174EA52009A7F4F /* ColCellBook.xib */; };
+		7531E59D2174EA52009A7F4F /* ColCellOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531E59B2174EA52009A7F4F /* ColCellOrder.swift */; };
+		7531E59E2174EA52009A7F4F /* ColCellOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7531E59C2174EA52009A7F4F /* ColCellOrder.xib */; };
 		757083B81B30118CD9E3834C /* Pods_Italian_Restaurant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0DA501BF3F88E8F7B18DD /* Pods_Italian_Restaurant.framework */; };
 		7575BC0C21677598007FAF26 /* ItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575BC0B21677598007FAF26 /* ItemVC.swift */; };
 		7575BC0E216788CB007FAF26 /* tblCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7575BC0D216788CB007FAF26 /* tblCellItem.swift */; };
@@ -84,8 +84,8 @@
 		7531E58821746FA8009A7F4F /* ColCellMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellMenu.swift; sourceTree = "<group>"; };
 		7531E58921746FA8009A7F4F /* ColCellMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColCellMenu.xib; sourceTree = "<group>"; };
 		7531E5942174BA48009A7F4F /* viewItemDescription.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewItemDescription.xib; sourceTree = "<group>"; };
-		7531E59B2174EA52009A7F4F /* ColCellBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellBook.swift; sourceTree = "<group>"; };
-		7531E59C2174EA52009A7F4F /* ColCellBook.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColCellBook.xib; sourceTree = "<group>"; };
+		7531E59B2174EA52009A7F4F /* ColCellOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellOrder.swift; sourceTree = "<group>"; };
+		7531E59C2174EA52009A7F4F /* ColCellOrder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColCellOrder.xib; sourceTree = "<group>"; };
 		7575BC0B21677598007FAF26 /* ItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemVC.swift; sourceTree = "<group>"; };
 		7575BC0D216788CB007FAF26 /* tblCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblCellItem.swift; sourceTree = "<group>"; };
 		7575BC0F21678941007FAF26 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -244,10 +244,18 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		751CD62D218998EB00433611 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
 		7531E55C217085D5009A7F4F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				7531E5982174E9E8009A7F4F /* Book */,
+				751CD62D218998EB00433611 /* Description */,
+				7531E5982174E9E8009A7F4F /* Order */,
 				7531E55D217085DE009A7F4F /* Menu */,
 			);
 			path = Detail;
@@ -264,15 +272,15 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
-		7531E5982174E9E8009A7F4F /* Book */ = {
+		7531E5982174E9E8009A7F4F /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				7531E59B2174EA52009A7F4F /* ColCellBook.swift */,
-				7531E59C2174EA52009A7F4F /* ColCellBook.xib */,
+				7531E59B2174EA52009A7F4F /* ColCellOrder.swift */,
+				7531E59C2174EA52009A7F4F /* ColCellOrder.xib */,
 				75E0FA8021770BC9007A3A0F /* ColCellSize.swift */,
 				75E0FA8121770BC9007A3A0F /* ColCellSize.xib */,
 			);
-			path = Book;
+			path = Order;
 			sourceTree = "<group>";
 		};
 		7575BC1121678EA0007FAF26 /* Helpers */ = {
@@ -447,7 +455,7 @@
 				759508F22187673800A6D2C8 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				750DAF152167358C0005E390 /* Main.storyboard in Resources */,
 				759508EF2187673800A6D2C8 /* Montserrat-Regular.ttf in Resources */,
-				7531E59E2174EA52009A7F4F /* ColCellBook.xib in Resources */,
+				7531E59E2174EA52009A7F4F /* ColCellOrder.xib in Resources */,
 				759508F12187673800A6D2C8 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				7595090D2187676000A6D2C8 /* Raleway-ExtraBold.ttf in Resources */,
 				759508E82187673800A6D2C8 /* Montserrat-MediumItalic.ttf in Resources */,
@@ -513,7 +521,7 @@
 				7531E55A217085C8009A7F4F /* viewItemDescription.swift in Sources */,
 				7575BC0C21677598007FAF26 /* ItemVC.swift in Sources */,
 				7531E58A21746FA8009A7F4F /* ColCellMenu.swift in Sources */,
-				7531E59D2174EA52009A7F4F /* ColCellBook.swift in Sources */,
+				7531E59D2174EA52009A7F4F /* ColCellOrder.swift in Sources */,
 				7575BC1021678941007FAF26 /* Item.swift in Sources */,
 				750DAF102167358C0005E390 /* AppDelegate.swift in Sources */,
 				7575BC192167C5A9007FAF26 /* SubItem.swift in Sources */,

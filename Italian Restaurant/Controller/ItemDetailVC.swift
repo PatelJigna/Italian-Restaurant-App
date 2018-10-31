@@ -46,7 +46,7 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
         mainScrollView.backgroundColor = UIColor.white
         colViewItemDetail.isPagingEnabled = true
     
-        colViewItemDetail.register(UINib(nibName: "ColCellBook", bundle: nil), forCellWithReuseIdentifier: "ColCellBook")
+        colViewItemDetail.register(UINib(nibName: "ColCellOrder", bundle: nil), forCellWithReuseIdentifier: "ColCellOrder")
         
         let gesture = UISwipeGestureRecognizer(target: self, action: #selector(dismiss(fromGesture:)))
         mainScrollView.addGestureRecognizer(gesture)
@@ -74,7 +74,7 @@ class ItemDetailVC: UIViewController,UICollectionViewDataSource, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColCellBook", for: indexPath) as! ColCellBook
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColCellOrder", for: indexPath) as! ColCellOrder
 
         return cell
     }

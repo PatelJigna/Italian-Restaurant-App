@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ColCellBook: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout  {
+class ColCellOrder: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout  {
     
 
     @IBOutlet weak var colViewSize: UICollectionView!
