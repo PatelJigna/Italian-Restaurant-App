@@ -10,6 +10,8 @@ import UIKit
 
 class Constant: NSObject {
 
+    static let kAppTitle = "Italian Restaurant"
+    
     static let kUserDefault = UserDefaults.standard
     
     static let kIsUserRegistered = "isRegister"

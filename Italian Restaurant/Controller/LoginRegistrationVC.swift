@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import Firebase
 
-class LoginRegistrationVC: UIViewController {
+class LoginRegistrationVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var btnLoginRegistration: UIButton!
     
     @IBOutlet weak var lblAccountText: UILabel!
     
     @IBOutlet weak var btnShowLoginRegistration: UIButton!
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    
     
      var boolIsRegister: Bool?
 
@@ -60,6 +66,8 @@ class LoginRegistrationVC: UIViewController {
     }
 
     
+    //MARK: - Button Actions
+    
     @IBAction func btnSignUpAction(_ sender: Any) {
        
         showLoginRegistrationAction()
@@ -87,27 +95,114 @@ class LoginRegistrationVC: UIViewController {
     
     @objc func showLoginRegistrationAction()  {
     
+         txtEmail.text = ""
+         txtPassword.text = ""
          boolIsRegister = Constant.kUserDefault.bool(forKey: Constant.kIsUserRegistered)
          boolIsRegister == false ? showLoginVC() : showRegisterVC()
         
     }
     
     @objc func btnLoginRegAction(sender: UIButton) {
+        self.view.endEditing(true)
+        
         if boolIsRegister == false {
             //Login
-            print("Login With Firebase")
+            LoginUserWithFirebase()
         }
         else {
             //Registration
-             print("Reg With Firebase")
+            RegisterUserWithFirebase()
+        }
+    
+    }
+    
+    func LoginUserWithFirebase() {
+        guard let email = txtEmail.text, email.count > 0 else {
+            UIAlertController.showAlertWithOkButton(self, aStrMessage: Message.kBlankEmail) { (index, str) in
+                self.txtEmail.becomeFirstResponder()
+            }
+            return
+            
+        }
+        guard let pwd = txtPassword.text, pwd.count > 0 else {
+            UIAlertController.showAlertWithOkButton(self, aStrMessage: Message.kBlankPwd) { (index, str) in
+                self.txtPassword.becomeFirstResponder()
+            }
+             return
         }
         
-        goToCart()
+        Auth.auth().signIn(withEmail: email, password: pwd) { (user, error) in
+            if error != nil {
+            //    print("Failed to login with Firebase",error ?? "")
+                UIAlertController.showAlertWithOkButton(self, aStrMessage: error?.localizedDescription, completion: nil)
+                return
+            }
+            
+            print("Successfully Logged in with Firebase.")
+            self.goToCart()
+        }
         
+    }
+    
+    func RegisterUserWithFirebase() {
+        
+        guard let email = txtEmail.text, email.count > 0 else {
+            UIAlertController.showAlertWithOkButton(self, aStrMessage: Message.kBlankEmail) { (index, str) in
+                self.txtEmail.becomeFirstResponder()
+            }
+            return
+        }
+        guard let pwd = txtPassword.text, pwd.count > 0 else {
+            UIAlertController.showAlertWithOkButton(self, aStrMessage: Message.kBlankPwd) { (index, str) in
+                self.txtPassword.becomeFirstResponder()
+            }
+            return
+        }
+        Auth.auth().createUser(withEmail: email, password: pwd) { (user, error) in
+            if error != nil {
+               // print(error ?? "")
+                UIAlertController.showAlertWithOkButton(self, aStrMessage: error?.localizedDescription, completion: nil)
+                return
+            }
+            
+            guard let uid = user?.user.uid else {
+                return
+            }
+            
+            let valueDict = ["email": email]
+            let values = [uid: valueDict]
+            let userReference = Database.database().reference().child("users")
+            
+            userReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                if err != nil {
+                    //print("Failed to Save User into DB",err ?? "")
+                    UIAlertController.showAlertWithOkButton(self, aStrMessage: err?.localizedDescription, completion: nil)
+                    return
+                }
+                
+                print("Successfully saved user into db")
+                 self.goToCart()
+            })
+            
+        }
     }
     
     func goToCart() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    //MARK: Textfield Delegate Methods
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == txtEmail {
+            txtPassword.becomeFirstResponder()
+        }
+        else if textField == txtPassword {
+             boolIsRegister == false ? LoginUserWithFirebase() : RegisterUserWithFirebase()
+        }
+        
+        return true
     }
     
 }
