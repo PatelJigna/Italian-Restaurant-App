@@ -21,7 +21,6 @@ class ColCellOrder: UICollectionViewCell, UICollectionViewDataSource, UICollecti
         
     @IBOutlet weak var txtDescription: UITextView!
     
-    @IBOutlet weak var btnOrderNow: UIButton!
     
     var arrSize:[String] = ["""
                             Size L
@@ -47,7 +46,7 @@ class ColCellOrder: UICollectionViewCell, UICollectionViewDataSource, UICollecti
         setBorderCornerRadius(view: viewQuantity, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
         setBorderCornerRadius(view: btnThin, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
         setBorderCornerRadius(view: btnThick, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
-        setBorderCornerRadius(view: btnOrderNow, cornerRadius: 25.0, borderWidth: 0.0, borderColor: UIColor.clear.cgColor)
+
         setBorderCornerRadius(view: txtDescription, cornerRadius: 8.0, borderWidth: 1.0, borderColor: UIColor.commonBorderColor)
     }
     

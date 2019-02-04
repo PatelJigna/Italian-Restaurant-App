@@ -12,6 +12,7 @@
 		750DAF17216735910005E390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750DAF16216735910005E390 /* Assets.xcassets */; };
 		750DAF1A216735910005E390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750DAF18216735910005E390 /* LaunchScreen.storyboard */; };
 		750DAF2721673A3D0005E390 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750DAF2621673A3D0005E390 /* Home.swift */; };
+		7511A48D21BFB035000F42EB /* LoginRegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511A48C21BFB035000F42EB /* LoginRegistrationVC.swift */; };
 		751CD6332189C4B200433611 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD62F2189C4B100433611 /* 1.png */; };
 		751CD6342189C4B200433611 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD6302189C4B100433611 /* 4.png */; };
 		751CD6352189C4B200433611 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 751CD6312189C4B100433611 /* 3.png */; };
@@ -69,6 +70,11 @@
 		759509172187676000A6D2C8 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759509042187676000A6D2C8 /* Raleway-Thin.ttf */; };
 		759509182187676000A6D2C8 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759509052187676000A6D2C8 /* Raleway-Italic.ttf */; };
 		759509192187676000A6D2C8 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759509062187676000A6D2C8 /* Raleway-Bold.ttf */; };
+		75B1789A2202FC9200430E0F /* ColCellDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B178982202FC9200430E0F /* ColCellDescription.swift */; };
+		75B1789B2202FC9200430E0F /* ColCellDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B178992202FC9200430E0F /* ColCellDescription.xib */; };
+		75B178A32203079E00430E0F /* ColReusableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B178A12203079E00430E0F /* ColReusableFooterView.swift */; };
+		75B178A42203079E00430E0F /* ColReusableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B178A22203079E00430E0F /* ColReusableFooterView.xib */; };
+		75B178A72204B1B000430E0F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B178A62204B1B000430E0F /* Constant.swift */; };
 		75E0FA8221770BC9007A3A0F /* ColCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0FA8021770BC9007A3A0F /* ColCellSize.swift */; };
 		75E0FA8321770BC9007A3A0F /* ColCellSize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E0FA8121770BC9007A3A0F /* ColCellSize.xib */; };
 		75E0FACB217F7405007A3A0F /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0FACA217F7405007A3A0F /* Extension+UIColor.swift */; };
@@ -83,6 +89,7 @@
 		750DAF19216735910005E390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750DAF1B216735910005E390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750DAF2621673A3D0005E390 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7511A48C21BFB035000F42EB /* LoginRegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationVC.swift; sourceTree = "<group>"; };
 		751CD62F2189C4B100433611 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		751CD6302189C4B100433611 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		751CD6312189C4B100433611 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -139,6 +146,11 @@
 		759509042187676000A6D2C8 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		759509052187676000A6D2C8 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
 		759509062187676000A6D2C8 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		75B178982202FC9200430E0F /* ColCellDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellDescription.swift; sourceTree = "<group>"; };
+		75B178992202FC9200430E0F /* ColCellDescription.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColCellDescription.xib; sourceTree = "<group>"; };
+		75B178A12203079E00430E0F /* ColReusableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColReusableFooterView.swift; sourceTree = "<group>"; };
+		75B178A22203079E00430E0F /* ColReusableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColReusableFooterView.xib; sourceTree = "<group>"; };
+		75B178A62204B1B000430E0F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		75E0FA8021770BC9007A3A0F /* ColCellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColCellSize.swift; sourceTree = "<group>"; };
 		75E0FA8121770BC9007A3A0F /* ColCellSize.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColCellSize.xib; sourceTree = "<group>"; };
 		75E0FACA217F7405007A3A0F /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
@@ -190,6 +202,7 @@
 		750DAF0E2167358C0005E390 /* Italian Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				75B178A52204B19500430E0F /* Utility */,
 				751CD62E2189C48600433611 /* Images */,
 				7575BC1121678EA0007FAF26 /* Helpers */,
 				750DAF2821673D680005E390 /* Resources */,
@@ -212,6 +225,7 @@
 				7575BC0B21677598007FAF26 /* ItemVC.swift */,
 				7575BC142167C11E007FAF26 /* SubItemVC.swift */,
 				7531E55621707EC2009A7F4F /* ItemDetailVC.swift */,
+				7511A48C21BFB035000F42EB /* LoginRegistrationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +270,8 @@
 		751CD62D218998EB00433611 /* Description */ = {
 			isa = PBXGroup;
 			children = (
+				75B178982202FC9200430E0F /* ColCellDescription.swift */,
+				75B178992202FC9200430E0F /* ColCellDescription.xib */,
 			);
 			path = Description;
 			sourceTree = "<group>";
@@ -274,6 +290,7 @@
 		7531E55C217085D5009A7F4F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				75B1789C2203031100430E0F /* AddToCart */,
 				751CD62D218998EB00433611 /* Description */,
 				7531E5982174E9E8009A7F4F /* Order */,
 				7531E55D217085DE009A7F4F /* Menu */,
@@ -372,6 +389,23 @@
 			path = Raleway;
 			sourceTree = "<group>";
 		};
+		75B1789C2203031100430E0F /* AddToCart */ = {
+			isa = PBXGroup;
+			children = (
+				75B178A12203079E00430E0F /* ColReusableFooterView.swift */,
+				75B178A22203079E00430E0F /* ColReusableFooterView.xib */,
+			);
+			path = AddToCart;
+			sourceTree = "<group>";
+		};
+		75B178A52204B19500430E0F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				75B178A62204B1B000430E0F /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		91B3ECE205BB1747F17CD923 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +476,7 @@
 			files = (
 				759508E32187673800A6D2C8 /* Montserrat-Light.ttf in Resources */,
 				759509182187676000A6D2C8 /* Raleway-Italic.ttf in Resources */,
+				75B178A42203079E00430E0F /* ColReusableFooterView.xib in Resources */,
 				7531E5952174BA48009A7F4F /* viewItemDescription.xib in Resources */,
 				7595090C2187676000A6D2C8 /* Raleway-SemiBold.ttf in Resources */,
 				759509112187676000A6D2C8 /* Raleway-SemiBoldItalic.ttf in Resources */,
@@ -466,6 +501,7 @@
 				7531E58B21746FA8009A7F4F /* ColCellMenu.xib in Resources */,
 				759508CB2186EBD200A6D2C8 /* viewStar.xib in Resources */,
 				7595090A2187676000A6D2C8 /* Raleway-ExtraLight.ttf in Resources */,
+				75B1789B2202FC9200430E0F /* ColCellDescription.xib in Resources */,
 				7595090B2187676000A6D2C8 /* Raleway-Medium.ttf in Resources */,
 				750DAF17216735910005E390 /* Assets.xcassets in Resources */,
 				759509172187676000A6D2C8 /* Raleway-Thin.ttf in Resources */,
@@ -543,11 +579,15 @@
 				759508C92186EBC600A6D2C8 /* viewStar.swift in Sources */,
 				7575BC172167C1FD007FAF26 /* colCellSubItem.swift in Sources */,
 				7531E55A217085C8009A7F4F /* viewItemDescription.swift in Sources */,
+				75B1789A2202FC9200430E0F /* ColCellDescription.swift in Sources */,
 				7575BC0C21677598007FAF26 /* ItemVC.swift in Sources */,
 				7531E58A21746FA8009A7F4F /* ColCellMenu.swift in Sources */,
+				75B178A32203079E00430E0F /* ColReusableFooterView.swift in Sources */,
 				7531E59D2174EA52009A7F4F /* ColCellOrder.swift in Sources */,
+				7511A48D21BFB035000F42EB /* LoginRegistrationVC.swift in Sources */,
 				7575BC1021678941007FAF26 /* Item.swift in Sources */,
 				750DAF102167358C0005E390 /* AppDelegate.swift in Sources */,
+				75B178A72204B1B000430E0F /* Constant.swift in Sources */,
 				7575BC192167C5A9007FAF26 /* SubItem.swift in Sources */,
 				7575BC1321678EB5007FAF26 /* Extensions+UIImage.swift in Sources */,
 				75E0FACB217F7405007A3A0F /* Extension+UIColor.swift in Sources */,

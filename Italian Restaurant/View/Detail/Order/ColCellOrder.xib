@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -136,21 +136,9 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCH-Ih-rvD">
-                                <rect key="frame" x="16" y="629" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.90980392156862744" green="0.16078431372549018" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="iXn-1D-kpY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
-                                <state key="normal" title="Add to cart">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XCH-Ih-rvD" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="0gW-cD-QGJ"/>
                             <constraint firstItem="NlV-iw-sll" firstAttribute="top" secondItem="jon-k2-4KI" secondAttribute="bottom" constant="10" id="0zx-fq-zB0"/>
                             <constraint firstItem="ukU-g0-AmG" firstAttribute="top" secondItem="jdU-jn-4k5" secondAttribute="bottom" constant="10" id="1Zi-m3-Bri"/>
                             <constraint firstItem="kpP-SP-Txa" firstAttribute="top" secondItem="ukU-g0-AmG" secondAttribute="top" id="2Ok-65-EBy"/>
@@ -164,9 +152,7 @@
                             <constraint firstItem="fmT-22-hD7" firstAttribute="top" secondItem="bMA-cb-AU4" secondAttribute="bottom" constant="10" id="M9d-NU-N3Z"/>
                             <constraint firstItem="jdU-jn-4k5" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="MYt-6L-tHZ"/>
                             <constraint firstItem="bMA-cb-AU4" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="PeL-0o-J3g"/>
-                            <constraint firstItem="XCH-Ih-rvD" firstAttribute="top" secondItem="fmT-22-hD7" secondAttribute="bottom" constant="30" id="Pz4-gZ-HbB"/>
                             <constraint firstItem="jdU-jn-4k5" firstAttribute="top" secondItem="7Lt-dn-IlV" secondAttribute="bottom" constant="30" id="Uvq-4q-WBa"/>
-                            <constraint firstItem="XCH-Ih-rvD" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="VCG-mE-QXe"/>
                             <constraint firstItem="fmT-22-hD7" firstAttribute="leading" secondItem="jon-k2-4KI" secondAttribute="leading" id="Vkg-mt-5cy"/>
                             <constraint firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" constant="16" id="XCG-tz-OFK"/>
                             <constraint firstItem="7Lt-dn-IlV" firstAttribute="trailing" secondItem="jon-k2-4KI" secondAttribute="trailing" id="Xhi-Ix-asg"/>
@@ -191,7 +177,6 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="166" height="798"/>
             <connections>
-                <outlet property="btnOrderNow" destination="XCH-Ih-rvD" id="Xmb-cx-cOe"/>
                 <outlet property="btnThick" destination="ukU-g0-AmG" id="bjm-Gu-MQl"/>
                 <outlet property="btnThin" destination="kpP-SP-Txa" id="Vn6-g9-tRe"/>
                 <outlet property="colViewSize" destination="NlV-iw-sll" id="2mR-3m-SYf"/>
