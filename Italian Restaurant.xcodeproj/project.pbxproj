@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7500429522083EBC00C4388E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7500429422083EBC00C4388E /* GoogleService-Info.plist */; };
 		750DAF102167358C0005E390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750DAF0F2167358C0005E390 /* AppDelegate.swift */; };
 		750DAF152167358C0005E390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750DAF132167358C0005E390 /* Main.storyboard */; };
 		750DAF17216735910005E390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750DAF16216735910005E390 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7500429422083EBC00C4388E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		750DAF0C2167358C0005E390 /* Italian Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Italian Restaurant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750DAF0F2167358C0005E390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750DAF142167358C0005E390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				750DAF16216735910005E390 /* Assets.xcassets */,
 				750DAF18216735910005E390 /* LaunchScreen.storyboard */,
 				750DAF1B216735910005E390 /* Info.plist */,
+				7500429422083EBC00C4388E /* GoogleService-Info.plist */,
 			);
 			path = "Italian Restaurant";
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				759509162187676000A6D2C8 /* Raleway-LightItalic.ttf in Resources */,
 				7595090F2187676000A6D2C8 /* Raleway-Regular.ttf in Resources */,
 				751CD6352189C4B200433611 /* 3.png in Resources */,
+				7500429522083EBC00C4388E /* GoogleService-Info.plist in Resources */,
 				759508E42187673800A6D2C8 /* Montserrat-ThinItalic.ttf in Resources */,
 				759509092187676000A6D2C8 /* Raleway-ThinItalic.ttf in Resources */,
 				759509102187676000A6D2C8 /* Raleway-ExtraLightItalic.ttf in Resources */,
@@ -537,11 +541,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Italian Restaurant/Pods-Italian Restaurant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
